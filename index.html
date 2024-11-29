@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+
+    <!-- Title -->
+    <title>Country Flags Quiz</title>
+
 </head>
 <body>
+    <div class="container">
+        <h1>Country Flags Quiz <i class="fa-solid fa-earth-americas"></i></h1>
+        <div class="game-area hide">
+            <div class="flag-container">
+                <img id="flag" src="" alt="Country Flag">
+            </div>
+            <div id="options" class="options-container"></div>
+            <p id="result"></p>
+            <div class="score=area">Score: <span id="score">0</span>/10</div>
+            <button id="start-btn" class="start-btn">Start</button>
+            <button id="next-btn" class="next-btn">Next</button>
+        </div>
+
+    </div>
     
+    <!-- Link to JS -->
     <script src="assets/js/script.js"></script>
 </body>
+
+<!-- Font awesome script -->
+<script src="https://kit.fontawesome.com/a3fe93833d.js" crossorigin="anonymous"></script>
+
 </html>
