@@ -35,3 +35,12 @@ h1 {
     box-shadow: 0 0 10px 2px;
     height: 95%;
 }
+
+.controls {
+    text-align: center;
+    margin: 20px;
+}
+
+.hide {
+    display: none;
+}
