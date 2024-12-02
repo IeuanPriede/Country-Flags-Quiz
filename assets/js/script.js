@@ -116,9 +116,17 @@ function endGame() {
     const restartButton = document.createElement("button");
     restartButton.textContent = "Restart";
     restartButton.addEventListener("click", () => {
+        currentFlagIndex = 0;
+        questionCount = 0;
+        score = 0;
+        scoreDisplay.textContent = score;
+
         resultText.textContent="";
         restartButton.remove();
-        startButton.classList.remove('hide');
+        flagImage.classList.remove('hide');
+        optionsContainer.classList.remove('hide');
+        scoreAreaElement.classList.remove('hide');
+        scoreDisplay.classList.remove('hide');
     });
     resultText.appendChild(restartButton); 
 }
