@@ -38,6 +38,8 @@ function startGame() {
     console.log('Started');
     questionCount = 0;
     score = 0;
+    shuffle(flags);
+    currentFlagIndex = 0;
     /* Hides start button when clicked */
     startButton.classList.add('hide');
     gameAreaElement.classList.remove('hide');
