@@ -35,6 +35,15 @@ function startGame() {
     gameAreaElement.classList.remove('hide');
     /* Load question flags */
     flagImage.src = flags[currentFlagIndex].image;
+
+    const correctAnswer = flags[currentFlagIndex].country;
+    const allOptions = shuffle(
+        flags
+           .map((flag) => flag.country)
+           .filter((country) => country !== correctAnswer)
+           .slice(0,3)
+           .concat(correctAnswer)
+    );
 }
 
 
