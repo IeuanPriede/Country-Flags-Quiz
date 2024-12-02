@@ -10,8 +10,10 @@ const flags = [
     { country: "Wales", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/800px-Flag_of_Wales.svg.png"}
 ]
 
+const currentFlagIndex = 0
 const startButton = document.getElementById('start-btn');
 const gameAreaElement = document.getElementById('game-area');
+let flagImage = document.getElementById("flag");
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
@@ -21,4 +23,7 @@ function startGame() {
     /* Hides start button when clicked */
     startButton.classList.add('hide');
     gameAreaElement.classList.remove('hide');
+    /* Shows question image */
+    flagImage.src = flags[currentFlagIndex].image;
 }
+
