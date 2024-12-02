@@ -18,6 +18,7 @@ let optionsContainer = document.getElementById("options");
 let resultText = document.getElementById("result");
 let nextBtnElement = document.getElementById("next-btn");
 const scoreDisplay = document.getElementById("score");
+let scoreAreaElement = document.getElementById("score-area");
 let questionCount = 0;
 const maxQuestions = 10;
 
@@ -102,7 +103,21 @@ nextBtnElement.addEventListener("click", () => {
 });
 
 function endGame() {
-    gameAreaElement.classList.add('hide');
     resultText.textContent = `Quiz Over! You scored ${score} out of ${maxQuestions}.`;
+    flagImage.classList.add('hide');
+    optionsContainer.classList.add('hide');
+    scoreDisplay.classList.add('hide');
+    scoreAreaElement.classList.add('hide');
+    
+
+    /* Restart button */
+    const restartButton = document.createElement("button");
+    restartButton.textContent = "Restart";
+    restartButton.addEventListener("click", () => {
+        resultText.textContent="";
+        restartButton.remove();
+        startButton.classList.remove('hide');
+    });
+    resultText.appendChild(restartButton); 
 }
 
