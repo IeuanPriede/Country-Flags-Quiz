@@ -44,3 +44,13 @@ h1 {
 .hide {
     display: none;
 }
+
+button {
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+}
