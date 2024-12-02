@@ -77,7 +77,11 @@ function checkAnswer(selectedOption) {
     nextBtnElement.classList.remove('hide');
 }
 
-next.Button.addEventListener("click", () => {
+nextBtnElement.addEventListener("click", () => {
     currentFlagIndex = (currentFlagIndex + 1) % flags.length;
+    resultText.textContent = "";
+    nextBtnElement.classList.add("hide");
+
+    startGame();
 });
 
