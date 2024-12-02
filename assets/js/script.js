@@ -15,6 +15,8 @@ let startButton = document.getElementById('start-btn');
 let gameAreaElement = document.getElementById('game-area');
 let flagImage = document.getElementById("flag");
 let optionsContainer = document.getElementById("options");
+let resultText = document.getElementById("result");
+let nextBtnElement = document.getElementById("next-btn");
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
@@ -68,6 +70,12 @@ function checkAnswer(selectedOption) {
         resultText.textContent = `Wrong! The correct answer is ${correctAnswer}`
         resultText.style.color = "red";
     }
+    nextBtnElement.classList.remove('hide');
 }
+
+next.Button.addEventListener("click", () => {
+    currentFlagIndex = (currentFlagIndex + 1) % flags.length;
+    loadflag();
+});
 
 
