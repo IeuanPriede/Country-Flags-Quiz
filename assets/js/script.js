@@ -18,6 +18,8 @@ let optionsContainer = document.getElementById("options");
 let resultText = document.getElementById("result");
 let nextBtnElement = document.getElementById("next-btn");
 const scoreDisplay = document.getElementById("score");
+let questionCount = 0;
+const maxQuestions = 10;
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
@@ -33,9 +35,20 @@ function shuffle(array) {
 
 function startGame() {
     console.log('Started');
+    questionCount = 0;
+    score = 0;
     /* Hides start button when clicked */
     startButton.classList.add('hide');
     gameAreaElement.classList.remove('hide');
+    loadQuestion();
+}
+
+function loadQuestion() {
+    if (questionCount >= maxQuestions) {
+        endGame();
+        return;
+    }
+
     /* Load question flags */
     flagImage.src = flags[currentFlagIndex].image;
 
@@ -75,13 +88,21 @@ function checkAnswer(selectedOption) {
         resultText.style.color = "red";
     }
     nextBtnElement.classList.remove('hide');
+    optionsContainer.classList.add('hide');
 }
 
 nextBtnElement.addEventListener("click", () => {
+    questionCount++;
     currentFlagIndex = (currentFlagIndex + 1) % flags.length;
     resultText.textContent = "";
     nextBtnElement.classList.add("hide");
+    optionsContainer.classList.remove('hide');
 
-    startGame();
+    loadQuestion();
 });
+
+function endGame() {
+    gameAreaElement.classList.add('hide');
+    resultText.textContent = `Quiz Over! You scored ${score} out of ${maxQuestions}.`;
+}
 
