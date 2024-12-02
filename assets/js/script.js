@@ -1,4 +1,5 @@
 const startButton = document.getElementById('start-btn');
+const gameAreaElement = document.getElementById('game-area');
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
