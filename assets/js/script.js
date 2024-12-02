@@ -17,6 +17,7 @@ let flagImage = document.getElementById("flag");
 let optionsContainer = document.getElementById("options");
 let resultText = document.getElementById("result");
 let nextBtnElement = document.getElementById("next-btn");
+const scoreDisplay = document.getElementById("score");
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
@@ -61,11 +62,14 @@ function startGame() {
     });
 }
 
+let score = 0;
 function checkAnswer(selectedOption) {
     const correctAnswer = flags[currentFlagIndex].country;
     if (selectedOption === correctAnswer) {
         resultText.textContent = "Correct!";
         resultText.style.color = "green";
+        score++;
+        scoreDisplay.textContent = `${score}`;
     } else {
         resultText.textContent = `Wrong! The correct answer is ${correctAnswer}`
         resultText.style.color = "red";
@@ -75,7 +79,5 @@ function checkAnswer(selectedOption) {
 
 next.Button.addEventListener("click", () => {
     currentFlagIndex = (currentFlagIndex + 1) % flags.length;
-    loadflag();
 });
-
 
