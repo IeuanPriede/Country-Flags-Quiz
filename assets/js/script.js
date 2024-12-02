@@ -10,20 +10,31 @@ const flags = [
     { country: "Wales", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/800px-Flag_of_Wales.svg.png"}
 ]
 
-const currentFlagIndex = 0
-const startButton = document.getElementById('start-btn');
-const gameAreaElement = document.getElementById('game-area');
+let currentFlagIndex = 0
+let startButton = document.getElementById('start-btn');
+let gameAreaElement = document.getElementById('game-area');
 let flagImage = document.getElementById("flag");
+let optionsContainer = document.getElementById("options");
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
+
+/* Shuffle options */
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
 function startGame() {
     console.log('Started');
     /* Hides start button when clicked */
     startButton.classList.add('hide');
     gameAreaElement.classList.remove('hide');
-    /* Shows question image */
+    /* Load question flags */
     flagImage.src = flags[currentFlagIndex].image;
 }
+
 
