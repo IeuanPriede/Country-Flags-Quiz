@@ -45,13 +45,29 @@ function startGame() {
            .concat(correctAnswer)
     );
 
+    /* Clear options container each time for new answers */ 
     optionsContainer.innerHTML = "";
+    /* Shuffles the options */
     shuffle(allOptions).forEach((option) => {
+        /* Creates buttons for answers */
         const button = document.createElement("button");
         button.textContent = option;
+        /* Checks answer when clicked */
         button.addEventListener("click", () => checkAnswer(option));
+        /* Adds buttons to optionsContainer */
         optionsContainer.appendChild(button);
     });
+}
+
+function checkAnswer(selectedOption) {
+    const correctAnswer = flags[currentFlagIndex].country;
+    if (selectedOption === correctAnswer) {
+        resultText.textContent = "Correct!";
+        resultText.style.color = "green";
+    } else {
+        resultText.textContent = `Wrong! The correct answer is ${correctAnswer}`
+        resultText.style.color = "red";
+    }
 }
 
 
