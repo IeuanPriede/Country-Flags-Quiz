@@ -44,6 +44,14 @@ function startGame() {
            .slice(0,3)
            .concat(correctAnswer)
     );
+
+    optionsContainer.innerHTML = "";
+    shuffle(allOptions).forEach((option) => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.addEventListener("click", () => checkAnswer(option));
+        optionsContainer.appendChild(button);
+    });
 }
 
 
