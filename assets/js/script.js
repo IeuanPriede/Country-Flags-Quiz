@@ -108,6 +108,7 @@ function endGame() {
     /* Restart button */
     const restartButton = document.createElement("button");
     restartButton.textContent = "Restart";
+    restartButton.classList.add("restart-btn");
     restartButton.addEventListener("click", () => {
         currentFlagIndex = 0;
         questionCount = 0;
