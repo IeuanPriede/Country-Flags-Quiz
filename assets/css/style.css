@@ -19,7 +19,7 @@ h1 {
     padding: 20px 10%;
     text-align: center;
     font-family: 'Bangers', sans-serif;
-    font-size: 38px;
+    font-size: 35px;
     letter-spacing: 2px;
     color: white;
 }
@@ -84,6 +84,11 @@ button {
 
 #score-area {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 25px;
+}
+
+#result {
+    text-align: center;
+    font-size: 15px;
 }
