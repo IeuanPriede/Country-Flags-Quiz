@@ -42,15 +42,18 @@ function loadQuestion() {
 
     /* Load question flags */
     flagImage.src = flags[currentFlagIndex].image;
-
     const correctAnswer = flags[currentFlagIndex].country;
-    const allOptions = shuffle(
-        flags
-           .map((flag) => flag.country)
-           .filter((country) => country !== correctAnswer)
-           .slice(0,3)
+
+    const incorrectAnswers = flags
+        .map((flag) => flag.country)
+        .filter((country) => country !== correctAnswer)
+
+    shuffle(incorrectAnswers);    
+
+    const allOptions = shuffle([
+           ...incorrectAnswers.slice(0,3)
            .concat(correctAnswer)
-    );
+    ]);
 
     /* Clear options container each time for new answers */ 
     optionsContainer.innerHTML = "";
