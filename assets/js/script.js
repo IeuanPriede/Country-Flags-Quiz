@@ -45,6 +45,14 @@ function loadQuestion() {
     flagImage.src = flags[currentFlagIndex].image;
     const correctAnswer = flags[currentFlagIndex].country;
 
+    /* Remove flag classes */
+    flagImage.classList.remove("switzerland-flag");
+
+    /* Add class for Switzerland flag */
+    if (flags[currentFlagIndex].country === "Switzerland") {
+        flagImage.classList.add("switzerland-flag");
+    }
+
     const incorrectAnswers = flags
         .map((flag) => flag.country)
         .filter((country) => country !== correctAnswer)
@@ -77,7 +85,7 @@ function checkAnswer(selectedOption) {
     /* Disable all option buttons */
     const buttons = optionsContainer.querySelectorAll("button");
     buttons.forEach(button => button.disabled = true);
-    
+
     if (selectedOption === correctAnswer) {
         resultText.textContent = "Correct!";
         resultText.style.color = "green";
