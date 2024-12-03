@@ -35,6 +35,7 @@ function startGame() {
 }
 
 function loadQuestion() {
+    console.log("loadQuestion called")
     if (questionCount >= maxQuestions) {
         endGame();
         return;
@@ -96,9 +97,10 @@ nextBtnElement.addEventListener("click", () => {
 });
 
 function endGame() {
-    resultText.textContent = `Quiz Over! You scored ${score} out of ${maxQuestions}.`;
+    resultText.textContent = `Quiz Over! Well done, you scored ${score} out of ${maxQuestions}.`;
     flagImage.classList.add('hide');
     optionsContainer.classList.add('hide');
+    optionsContainer.innerHTML = "";
     scoreDisplay.classList.add('hide');
     scoreAreaElement.classList.add('hide');
     
