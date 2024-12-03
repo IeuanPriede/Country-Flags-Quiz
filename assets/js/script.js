@@ -73,6 +73,11 @@ function loadQuestion() {
 let score = 0;
 function checkAnswer(selectedOption) {
     const correctAnswer = flags[currentFlagIndex].country;
+
+    /* Disable all option buttons */
+    const buttons = optionsContainer.querySelectorAll("button");
+    buttons.forEach(button => button.disabled = true);
+    
     if (selectedOption === correctAnswer) {
         resultText.textContent = "Correct!";
         resultText.style.color = "green";
