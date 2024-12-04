@@ -109,3 +109,110 @@ button {
 .restart-btn {
     margin-top: 20px;
 }
+
+/* Media query: Larger than ipads (768px and up) */
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 60px;
+        padding: 20px 10%;
+    }
+
+    #result {
+        font-size: 25px;
+    }
+
+    #score-area {
+        font-size: 30px;
+    }
+
+    .game-area {
+        margin: 20px;
+    }
+}
+
+/* Media query: Larger than large Laptops (1440px and up) */
+@media screen and (min-width: 1440px) {
+    
+    h1 {
+        font-size: 80px;
+        padding: 30px 10%;
+    }
+
+    #result {
+        font-size: 35px;
+    }
+
+    #score-area {
+        font-size: 40px;
+    }
+
+    #flag {
+        max-width: 350px;
+        height: 200px;
+    }
+
+    #flag.switzerland-flag {
+        width: 200px !important;
+        height: auto;
+    }
+
+    button {
+        font-size: 30px;
+        width: 250px;
+        height: 70px;
+    }
+}
+
+/* Media query: Larger than large monitors (4000px and up) */
+@media screen and (min-width: 4000px) {
+    h1 {
+        font-size: 60px;
+        padding: 20px 10%;
+    }
+
+    #result {
+        font-size: 25px;
+    }
+
+    #score-area {
+        font-size: 30px;
+    }
+
+    .game-area {
+        margin: 20px;
+    }
+}
+
+/* Media query: Larger than large Laptops (1440px and up) */
+@media screen and (min-width: 1440px) {
+    
+    h1 {
+        font-size: 150px;
+        padding: 30px 10%;
+    }
+
+    #result {
+        font-size: 70px;
+    }
+
+    #score-area {
+        font-size: 90px;
+    }
+
+    #flag {
+        max-width: 650px;
+        height: 400px;
+    }
+
+    #flag.switzerland-flag {
+        width: 400px !important;
+        height: auto;
+    }
+
+    button {
+        font-size: 50px;
+        width: 350px;
+        height: 100px;
+    }
+}
