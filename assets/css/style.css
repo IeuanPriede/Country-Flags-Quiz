@@ -114,16 +114,16 @@ button {
 @media screen and (min-width: 768px) {
 
     h1 {
-        font-size: 60px;
-        padding: 20px 10%;
+        font-size: 50px;
+        padding: 10px 10%;
     }
 
     #result {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #score-area {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .game-area {
@@ -135,84 +135,65 @@ button {
 @media screen and (min-width: 1440px) {
     
     h1 {
-        font-size: 80px;
-        padding: 30px 10%;
+        font-size: 60px;
+        padding: 20px 10%;
     }
 
     #result {
+        font-size: 30px;
+    }
+
+    #score-area {
         font-size: 35px;
     }
 
-    #score-area {
-        font-size: 40px;
-    }
-
     #flag {
-        max-width: 350px;
-        height: 200px;
+        max-width: 300px;
+        height: 170px;
     }
 
     #flag.switzerland-flag {
-        width: 200px !important;
-        height: auto;
+        width: 180px !important;
+        height: 150px;
     }
 
     button {
-        font-size: 30px;
-        width: 250px;
-        height: 70px;
+        font-size: 20px;
+        width: 180px;
+        height: 40px;
     }
 }
 
-/* Media query: Larger than large monitors (4000px and up) */
-@media screen and (min-width: 4000px) {
-    h1 {
-        font-size: 60px;
-        padding: 20px 10%;
-    }
-
-    #result {
-        font-size: 25px;
-    }
-
-    #score-area {
-        font-size: 30px;
-    }
-
-    .game-area {
-        margin: 20px;
-    }
-}
-
-/* Media query: Larger than large Laptops (1440px and up) */
-@media screen and (min-width: 1440px) {
+/* Media query: Larger than large Laptops (2560px and up) */
+@media screen and (min-width: 2560px) {
     
     h1 {
-        font-size: 150px;
+        font-size: 130px;
         padding: 30px 10%;
     }
 
     #result {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     #score-area {
-        font-size: 90px;
+        font-size: 60px;
     }
 
     #flag {
-        max-width: 650px;
-        height: 400px;
+        max-width: 600px;
+        height: 350px;
     }
 
     #flag.switzerland-flag {
-        width: 400px !important;
+        width: 300px !important;
         height: auto;
     }
 
     button {
-        font-size: 50px;
+        font-size: 40px;
         width: 350px;
-        height: 100px;
+        height: 70px;
+        margin-bottom: 10px;
     }
 }
