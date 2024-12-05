@@ -11,6 +11,7 @@ let questionCount = 0;
 const maxQuestions = 10;
 const questionCountDisplay = document.getElementById("count")
 const maxCount = 10;
+const questionsDisplay = document.getElementById("questions")
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
@@ -121,6 +122,8 @@ function endGame() {
     optionsContainer.innerHTML = "";
     scoreDisplay.classList.add('hide');
     scoreAreaElement.classList.add('hide');
+    questionsDisplay.classList.add('hide');
+
     
 
     /* Restart button */
