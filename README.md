@@ -87,8 +87,10 @@ For the questions I used images of the country flags.
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
 
-![Home Page]
-![404 Error Page]
+![Iphone](/assets/images/iphone%20wireframe.png)
+![Tablet](/assets/images/ipad%20wireframe.png)
+![Laptop](/assets/images/laptop%20wireframe.png)
+
 
 ### Features
 
@@ -177,3 +179,32 @@ To clone the repository:
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+## Testing
+
+Please refer to [TESTING.md](/TESTING.md) file for all testing carried out.
+
+## Credits
+
+### Code Used
+
+* I used the Code Institute curriculum to help with my coding. In particular the 'Love Maths' section.
+
+* I used this [Video Tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k&list=WL&index=3&t=851s&ab_channel=WebDevSimplified) on Youtube by [WebDevSimplified](https://www.youtube.com/@WebDevSimplified) to help with me with the quiz buttons.
+
+* I made use of ChatGPT to help guide me through processes such as implementing images as questions.
+
+### Content
+
+All content for the site were written by myself.
+
+### Media
+
+Background image:
+
+Wikipedia -
+[Map](https://en.m.wikipedia.org/wiki/File:A_large_blank_world_map_with_oceans_marked_in_blue.PNG) 
+
+Flags -
+All flag images were taken from Wikipedia [Wikipedia](https://www.wikipedia.org/)
+ 
