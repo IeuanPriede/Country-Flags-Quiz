@@ -178,6 +178,10 @@ button {
         width: 180px;
         height: 40px;
     }
+
+    #questions {
+        font-size: 25px;
+    }
 }
 
 /* Media query: Larger than large Laptops (2560px and up) */
