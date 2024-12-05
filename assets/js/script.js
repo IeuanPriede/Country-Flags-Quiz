@@ -1,4 +1,4 @@
-let currentFlagIndex = 0
+let currentFlagIndex = 0;
 let startButton = document.getElementById('start-btn');
 let gameAreaElement = document.getElementById('game-area');
 let flagImage = document.getElementById("flag");
@@ -9,9 +9,9 @@ const scoreDisplay = document.getElementById("score");
 let scoreAreaElement = document.getElementById("score-area");
 let questionCount = 0;
 const maxQuestions = 10;
-const questionCountDisplay = document.getElementById("count")
+const questionCountDisplay = document.getElementById("count");
 const maxCount = 10;
-const questionsDisplay = document.getElementById("questions")
+const questionsDisplay = document.getElementById("questions");
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
@@ -57,7 +57,7 @@ function loadQuestion() {
 
     const incorrectAnswers = flags
         .map((flag) => flag.country)
-        .filter((country) => country !== correctAnswer)
+        .filter((country) => country !== correctAnswer);
 
     shuffle(incorrectAnswers);    
 
@@ -94,7 +94,7 @@ function checkAnswer(selectedOption) {
         score++;
         scoreDisplay.textContent = `${score}`;
     } else {
-        resultText.textContent = `Wrong! The correct answer is ${correctAnswer}`
+        resultText.textContent = `Wrong! The correct answer is ${correctAnswer}`;
         resultText.style.color = "red";
     }
 
@@ -178,4 +178,4 @@ const flags = [
     { country: "Libya", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Libya.svg/383px-Flag_of_Libya.svg.png"},
     { country: "Kazakhstan", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/383px-Flag_of_Kazakhstan.svg.png"},
     { country: "Lesotho", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flag_of_Lesotho.svg/383px-Flag_of_Lesotho.svg.png"}
-]
+];
