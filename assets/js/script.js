@@ -9,6 +9,8 @@ const scoreDisplay = document.getElementById("score");
 let scoreAreaElement = document.getElementById("score-area");
 let questionCount = 0;
 const maxQuestions = 10;
+const questionCountDisplay = document.getElementById("count")
+const maxCount = 10;
 
 /* Listens for a mouse click to start game */
 startButton.addEventListener('click', startGame);
@@ -35,7 +37,6 @@ function startGame() {
 }
 
 function loadQuestion() {
-    console.log("loadQuestion called")
     if (questionCount >= maxQuestions) {
         endGame();
         return;
@@ -95,12 +96,16 @@ function checkAnswer(selectedOption) {
         resultText.textContent = `Wrong! The correct answer is ${correctAnswer}`
         resultText.style.color = "red";
     }
+
     nextBtnElement.classList.remove('hide');
     optionsContainer.classList.add('hide');
 }
 
+let count = 1;
 nextBtnElement.addEventListener("click", () => {
     questionCount++;
+    count++;
+    questionCountDisplay.textContent = `${count}`;
     currentFlagIndex = (currentFlagIndex + 1) % flags.length;
     resultText.textContent = "";
     nextBtnElement.classList.add("hide");
@@ -127,6 +132,8 @@ function endGame() {
         questionCount = 0;
         score = 0;
         scoreDisplay.textContent = score;
+        count = 1;
+        questionCountDisplay.textContent = count;
 
         shuffle(flags);
 
