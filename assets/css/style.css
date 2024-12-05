@@ -114,14 +114,6 @@ button {
     text-align: center;
 }
 
-/* 404 Page */
-
-.error-message {
-    margin: 5%;
-    text-align: center;
-    color: white;
-}
-
 /* Media query: Larger than ipads (768px and up) */
 @media screen and (min-width: 768px) {
 
