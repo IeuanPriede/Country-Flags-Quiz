@@ -1,131 +1,159 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Country Flags Quiz
 
-Welcome Ieuan Priede,
+![The Quiz start screen on a variety of screen sizes](/assets/images/Screenshot%202024-12-05%20141751.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Country-Flags-Quiz/)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+A fun quiz to test your knowledge of country flags from around the world.
 
-## Gitpod Reminders
+Match the flag image to one of the four listed country names.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## CONTENTS
 
-`python3 -m http.server`
+* [User Experience](#user-experience)
+  * [User Stories](#user-stories)
 
-A blue button should appear to click: _Make Public_,
+* [Design](#design) 
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+    * [The Home page](#the-home-page)
+    * [The 404 Error Page](#the-404-error-page)
+  * [Accessibility](#accessibility)
 
-Another blue button should appear to click: _Open Browser_.
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+* [Deployment & Local Development](#deployment--local-development)
+  * [Deployment](#deployment)
+  * [Local Development](#local-development)
 
-A blue button should appear to click: _Make Public_,
+* [Testing](#testing)
 
-Another blue button should appear to click: _Open Browser_.
+* [Credits](#credits)
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- - -
 
-To log into the Heroku toolbelt CLI:
+![Country Flags Quiz Heading](/assets/images/Screenshot%202024-12-05%20142625.png)  
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## User Experience
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### User Stories
 
-### Connecting your Mongo database
+#### First Time Visitor Goals
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+* I want to test my knowledge of country flags.
+* I want to have fun doing something educational.
+* I want the site to be responsive to my device.
+* I want the site to be easy to navigate.
 
-------
+#### Returning Visitor Goals
 
-## Release History
+* I want to test my knowledge of country flags and learn for those I got incorrect.
+* I had fun and want to continue having fun.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Frequent Visitor Goals
 
-**June 18, 2024,** Add Mongo back into template
+* I want to master this quiz.
+* I want to know all country flags off by heart.
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+## Design
 
-**May 28 2024:** Fix Mongo and Links installs
+### Colour Scheme
 
-**April 26 2024:** Update node version to 16
+I chose an image of a map of the world with no labels. This map's colour were simple light blue and white.
 
-**September 20 2023:** Update Python version to 3.9.17.
+* For the container of which the game sits inside I used rgba(2, 1, 0, 0.8).
+* For the Heading and Score I used #ffffff.
+* For correct answers I used #008000.
+* For incorrect answers I used #ff0000.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Typography
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Google Fonts was used to import the chosen fonts for use in the site.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* For the Page Heading I used the google font [Bangers] ('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap')
+* For the page content I used the google font [Noto Sans] ('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap')
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Imagery
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+For the Background Image I used a map of the world containing no labels.
+For the questions I used images of the country flags.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Wireframes
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Wireframes were created for mobile, tablet and desktop using balsamiq.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Home Page]
+![404 Error Page]
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Features
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The Quiz only contains two pages.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+All pages are responsive and have:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* A favicon in the browser tab & the footer.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![favicon](/assets/images/favicon.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* The title of the quiz at the top of every page.
 
-------
+![Country Flag Quiz](/assets/images/Screenshot%202024-12-05%20142625.png)
 
-## FAQ about the uptime script
+#### The Home Page
 
-**Why have you added this script?**
+The home page contains the map image as the background and a container which hold the quiz inside. I has a start button to begin the quiz.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Home Page Image](/assets/images/Screenshot%202024-12-05%20141751.png)
 
-**How will this affect me?**
+Once the quiz has begun, the flag image appears with four options to choose from. It also shows what question number the user is on, and their score.
+It contains a next button to move the user onto the next question, and tells the user if their answer is correct or incorrect.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Quiz question and Answers](/assets/images/question%20and%20answer.png)
+![Correct Answer](/assets/images/correct%20answer.png)
+![Incorrect Answer](/assets/images/incorrect%20answer.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+#### 404 Error Page
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The 404 Error Page tells the user that something went wrong. It offer the user a way to return back to the home page with a 'Return' button.
 
-**So….?**
+![404 Error Page](/assets/images/404.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Accessibility 
 
-**Can I opt out?**
+I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been have achieved by:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* Using semantic HTML.
+* Ensuring that there is a sufficient colour contrast throughout the site.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Technologies Used
 
-**Anything more?**
+HTML, CSS, JAVA SCRIPT
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Frameworks, Liraries & Programs Used
 
----
+## Deployment & Local Development
 
-Happy coding!
+* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+* [Github](https://github.com/) - To save and store the files for the website.
+* [GitPod](https://gitpod.io/) - IDE used to create the site.
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+* [Favicon.io](https://favicon.io/) To create favicon.
+* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+### Deployment
+
+The site is deployed using GitHub Pages - [Country Flags Quiz](https://ieuanpriede.github.io/Country-Flags-Quiz/)
+
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, [Ieuan-Priede/Country-Flags-Quiz](https://github.com/IeuanPriede/Country-Flags-Quiz).
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
