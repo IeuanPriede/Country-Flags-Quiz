@@ -22,7 +22,7 @@ Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Cou
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* [index.html](assets/images/html-test.png) - Passed - 1 (Invalid) [Error](assets/images/Image_src_error.png)
+* [index.html](assets/images/html-test.png) - Passed - 1 [Error](assets/images/Image_src_error.png)
 * [404.html](assets/images/404_test.png) - Passed
 
 * [style.css](assets/images/css_test.png) - Passed
@@ -31,7 +31,7 @@ Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Cou
 
 [jshint](https://jshint.com/) I used to validate the JavaScript.
 
-* [script.js](assets/images/javascript_test.png) - Passed. 1 Unused variable = line 15 maxCount. However it is needed to count the number of flags asked, stop and restart the count when quiz has ended.
+* [script.js](assets/images/javascript_test.png) - Passed. 1 Unused variable = line 15 maxCount.
 
 ### Lighthouse
 

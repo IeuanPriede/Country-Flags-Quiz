@@ -89,7 +89,7 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 ![Iphone](assets/images/iphone_wireframe.png)
 ![Tablet](assets/images/ipad_wireframe.png)
-![Laptop](assets/images/javascript_test.png)
+![Laptop](assets/images/laptop_wireframe.png)
 
 
 ### Features
@@ -115,7 +115,7 @@ The home page contains the map image as the background and a container which hol
 Once the quiz has begun, the flag image appears with four options to choose from. It also shows what question number the user is on, and their score.
 It contains a next button to move the user onto the next question, and tells the user if their answer is correct or incorrect.
 
-![Quiz question and Answers](assets/images/javascript_test.png)
+![Quiz question and Answers](assets/images/question_and_answer.png)
 ![Correct Answer](assets/images/correct_answer.png)
 ![Incorrect Answer](assets/images/incorrect_answer.png)
 
@@ -186,7 +186,9 @@ Please refer to [TESTING.md](/TESTING.md) file for all testing carried out.
 
 ### Solved Bugs
 
+[Error](assets/images/Image_src_error.png) - Bad value for attribute 'src' - [Fixed](assets/images/src_fix.png)
 
+[Error](assets/images/javascript_test.png) - 1 Unused variable 'maxCount' - [Fixed](assets/images/js_fix.png)
 
 ## Credits
 
