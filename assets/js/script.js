@@ -10,7 +10,6 @@ let scoreAreaElement = document.getElementById("score-area");
 let questionCount = 0;
 const maxQuestions = 10;
 const questionCountDisplay = document.getElementById("count");
-const maxCount = 10;
 const questionsDisplay = document.getElementById("questions");
 
 /* Listens for a mouse click to start game */
@@ -136,16 +135,18 @@ function endGame() {
         score = 0;
         scoreDisplay.textContent = score;
         count = 1;
-        questionCountDisplay.textContent = count;
+        questionCountDisplay.textContent = `${count}`;
 
         shuffle(flags);
 
         resultText.textContent="";
         restartButton.remove();
+
         flagImage.classList.remove('hide');
         optionsContainer.classList.remove('hide');
         scoreAreaElement.classList.remove('hide');
         scoreDisplay.classList.remove('hide');
+        questionsDisplay.classList.remove('hide');
 
         loadQuestion();
     });

@@ -1,6 +1,6 @@
 # Country Flags Quiz - Testing
 
-![The Quiz start screen on a variety of screen sizes](/assets/images/Screenshot%202024-12-05%20141751.png)
+![The Quiz start screen on a variety of screen sizes](assets/images/home.png)
 
 Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Country-Flags-Quiz/)
 
@@ -22,16 +22,16 @@ Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Cou
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* [index.html](/assets/images/HTML%20TEST.png) - Passed - 1 (Invalid) [Error](/assets/images/Image%20src%20error.png)
-* [404.html](/assets/images/404%20test.png) - Passed
+* [index.html](assets/images/html-test.png) - Passed - 1 (Invalid) [Error](assets/images/Image_src_error.png)
+* [404.html](assets/images/404_test.png) - Passed
 
-* [style.css](/assets/images/css%20test.png) - Passed
+* [style.css](assets/images/css_test.png) - Passed
 
 ### JavaScript Validator
 
 [jshint](https://jshint.com/) I used to validate the JavaScript.
 
-* [script.js](/assets/images/javascript%20test.png) - Passed. 1 Unused variable = line 15 maxCount. However it is needed to count the number of flags asked, stop and restart the count when quiz has ended.
+* [script.js](assets/images/javascript_test.png) - Passed. 1 Unused variable = line 15 maxCount. However it is needed to count the number of flags asked, stop and restart the count when quiz has ended.
 
 ### Lighthouse
 
@@ -39,7 +39,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Mobile Results
 
-![index.html](/assets/images/Iphone.png)
+![index.html](assets/images/iphone.png)
 
 ### Desktop Results 
 

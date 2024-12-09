@@ -1,6 +1,6 @@
 # Country Flags Quiz
 
-![The Quiz start screen on a variety of screen sizes](/assets/images/Screenshot%202024-12-05%20141751.png)
+![The Quiz start screen on a variety of screen sizes](assets/images/home.png)
 
 Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Country-Flags-Quiz/)
 
@@ -37,7 +37,7 @@ Match the flag image to one of the four listed country names.
 
 - - -
 
-![Country Flags Quiz Heading](/assets/images/Screenshot%202024-12-05%20142625.png)  
+![Country Flags Quiz Heading](assets/images/title.png)  
 
 ## User Experience
 
@@ -87,9 +87,9 @@ For the questions I used images of the country flags.
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
 
-![Iphone](/assets/images/iphone%20wireframe.png)
-![Tablet](/assets/images/ipad%20wireframe.png)
-![Laptop](/assets/images/laptop%20wireframe.png)
+![Iphone](assets/images/iphone_wireframe.png)
+![Tablet](assets/images/ipad_wireframe.png)
+![Laptop](assets/images/javascript_test.png)
 
 
 ### Features
@@ -104,20 +104,20 @@ All pages are responsive and have:
 
 * The title of the quiz at the top of every page.
 
-![Country Flag Quiz](/assets/images/Screenshot%202024-12-05%20142625.png)
+![Country Flag Quiz](assets/images/title.png)
 
 #### The Home Page
 
 The home page contains the map image as the background and a container which hold the quiz inside. I has a start button to begin the quiz.
 
-![Home Page Image](/assets/images/Screenshot%202024-12-05%20141751.png)
+![Home Page Image](assets/images/home.png)
 
 Once the quiz has begun, the flag image appears with four options to choose from. It also shows what question number the user is on, and their score.
 It contains a next button to move the user onto the next question, and tells the user if their answer is correct or incorrect.
 
-![Quiz question and Answers](/assets/images/question%20and%20answer.png)
-![Correct Answer](/assets/images/correct%20answer.png)
-![Incorrect Answer](/assets/images/incorrect%20answer.png)
+![Quiz question and Answers](assets/images/javascript_test.png)
+![Correct Answer](assets/images/correct_answer.png)
+![Incorrect Answer](assets/images/incorrect_answer.png)
 
 #### 404 Error Page
 
@@ -183,6 +183,10 @@ To clone the repository:
 ## Testing
 
 Please refer to [TESTING.md](/TESTING.md) file for all testing carried out.
+
+### Solved Bugs
+
+
 
 ## Credits
 
