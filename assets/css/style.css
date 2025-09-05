@@ -1,6 +1,7 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..900&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -11,34 +12,66 @@
 
 /* Theme tokens */
 :root {
-  --space: clamp(.75rem, 1vw + .25rem, 1.25rem);
-  --radius: 1rem;
-  --border: rgba(255,255,255,.12);
+    --space: clamp(.75rem, 1vw + .25rem, 1.25rem);
+    --radius: 1rem;
+    --border: rgba(255,255,255,.12);
+    /* New theme colors */
+    --bg: #0b1220;
+    --bg-accent: #0f1a33;
+    --text: #e8ecf1;
+    --muted: #9aa6b2;
+    --card: rgba(16, 24, 44, 0.72);   /* glass */
+    --brand: #14b8a6;                 /* teal */
+    --brand-2: #6366f1;               /* indigo */
 }
 
 /* Base */
-body, html {
-    background: url("../images/a_large_blank_world_map_with_oceans_marked_in_blue.png") no-repeat center center/cover;
+html, body {
     height: 100%;
-    font-family: 'Noto Sans', sans-serif;
-    color: #ffffff;
 }
 
-/* Title scales with clamp */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--text);
+
+    /* Layered gradients for a modern background */
+    background:
+        radial-gradient(1200px 800px at 10% -10%, #13223f 0%, transparent 70%),
+        radial-gradient(900px 700px at 110% 10%, #15284b 0%, transparent 65%),
+        linear-gradient(180deg, var(--bg-accent), var(--bg));
+    background-attachment: fixed, fixed, fixed;
+}
+
+/* Header / title */
 h1 {
-    padding: var(--space) 10%;
-    text-align: center;
-    font-family: 'Bangers', sans-serif;
-    font-size: clamp(2rem, 3vw + 1rem, 3.5rem);
-    letter-spacing: 2px;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  margin: 0;
+  padding: clamp(.75rem, 2vw, 1.25rem) clamp(1rem, 4vw, 2rem);
+  font-family: 'Outfit', 'Noto Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: .2px;
+  line-height: 1.05;
+  font-size: clamp(2.6rem, 4.2vw + 0.5rem, 4.5rem);
+  color: var(--text);
+  text-align: center;
+}
+
+h1 .fa-earth-americas {
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  color: color-mix(in oklab, var(--brand) 70%, white);
+  filter: drop-shadow(0 2px 6px rgba(20,184,166,.25));
+  transform: translateY(1px);
 }
 
 /* Game layout */
 /* Card container centered, no fixed height */
 .container {
-    /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(2, 1, 0, 0.8);
+    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    backdrop-filter: blur(8px);
     display: block;
     margin: 5% auto;
     max-width: 1100px;
@@ -50,18 +83,18 @@ h1 {
 
 /* Game area */
 .game-area {
-  margin: 0;
+    margin: 0;
 }
 
 /* New responsive grid: stacks by default, side-by-side from 768px */
 .game-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: clamp(1rem, 2vw, 2rem);
-  padding: clamp(1rem, 2.5vw, 2rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 2vw, 2rem);
+    padding: clamp(1rem, 2.5vw, 2rem);
 }
 @media (min-width: 768px) {
-  .game-grid { grid-template-columns: 1.1fr .9fr; align-items: start; }
+    .game-grid { grid-template-columns: 1.1fr .9fr; align-items: start; }
 }
 
 .game-right {
@@ -70,27 +103,27 @@ h1 {
 
 /* Flag block with stable aspect ratio and subtle glass look */
 .flag-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .flag-frame {
-  width: min(100%, 420px);
-  aspect-ratio: 4 / 3;
-  border-radius: calc(var(--radius) - .25rem);
-  backdrop-filter: blur(6px);
-  overflow: hidden;
-  margin: 0 auto;
+    width: min(100%, 420px);
+    aspect-ratio: 4 / 3;
+    border-radius: calc(var(--radius) - .25rem);
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+    margin: 0 auto;
 }
 /* Make #flag fill the frame without distortion */
 .flag-frame #flag,
 #flag {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
 }
 /* Square exception for Switzerland */
 .flag-frame #flag.switzerland-flag { aspect-ratio: 1 / 1; }
@@ -98,34 +131,53 @@ h1 {
 /* Options: single column on mobile, two columns on wider screens */
 #options,
 .options-container {
-  display: grid;
-  gap: .6rem;
-  margin: var(--space) auto 0;
+    display: grid;
+    gap: .6rem;
+    margin: var(--space) auto 0;
 }
 @media (min-width: 600px) {
-  #options,
-  .options-container { grid-template-columns: repeat(2, 1fr); max-width: 520px; }
+    #options,
+    .options-container { grid-template-columns: repeat(2, 1fr); max-width: 520px; }
+}
+
+/* Momentary color swap when an answer is pressed */
+#options button:active,
+#options [role="button"]:active {
+    background: var(--text);   /* light background */
+    color: #0b1220;            /* dark text */
+    border-color: transparent;
+    transform: translateY(0);
 }
 
 /* Text blocks */
 #questions,
 #score-area,
 #result {
-  text-align: center;
-  margin-top: .5rem;
-  font-size: clamp(.95rem, 1.2vw, 1.1rem);
+    text-align: center;
+    margin-top: .5rem;
+    font-size: clamp(.95rem, 1.2vw, 1.1rem);
 }
 
 /* Buttons: intrinsic width, rounded, responsive font-size */
 button {
-  font-size: clamp(1rem, .5vw + .9rem, 1.1rem);
-  text-transform: uppercase;
-  border-radius: 999px;
-  width: auto;
-  min-width: 160px;
-  height: auto;
-  padding: .75rem 1rem;
-  margin-bottom: .5rem;
+    font-size: clamp(1rem, .5vw + .9rem, 1.1rem);
+    text-transform: uppercase;
+    border-radius: 999px;
+    width: auto;
+    min-width: 160px;
+    height: auto;
+    padding: .75rem 1rem;
+    margin-bottom: .5rem;
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+    color: var(--text);
+    transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+}
+button:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+button:active { transform: translateY(0); }
+button:focus-visible {
+    outline: 3px solid color-mix(in oklab, var(--brand) 60%, white);
+    outline-offset: 2px;
 }
 
 /* Controls row */
@@ -140,9 +192,21 @@ button {
 /* Utilities */
 .hide { display: none !important; }
 
-/* Cleanups from the old stylesheet:
-   - We remove fixed #flag sizing and the big start-button margin. */
-#start-btn { margin: 0; }
+/* Start: brand gradient */
+#start-btn {
+    border: none;
+    background: linear-gradient(90deg,
+        color-mix(in oklab, var(--brand) 70%, white),
+        color-mix(in oklab, var(--brand-2) 65%, white)
+    );
+    color: #04121a;
+}
+
+/* Next: ghost style */
+#next-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+}
 
 /* Optional: spacing for a potential restart button if you use it */
 .restart-btn { margin-top: .75rem; }
