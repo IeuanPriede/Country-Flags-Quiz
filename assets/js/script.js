@@ -25,7 +25,7 @@ function shuffle(array) {
 }
 
 function startGame() {
-    console.log('Started');
+    /* console.log('Started'); */
     questionCount = 0;
     score = 0;
     shuffle(flags);
