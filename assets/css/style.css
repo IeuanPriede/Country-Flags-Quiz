@@ -133,10 +133,6 @@ button {
     #score-area {
         font-size: 25px;
     }
-
-    .game-area {
-        margin: 20px;
-    }
 }
 
 /* Media query: Larger than large Laptops (1440px and up) */
