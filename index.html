@@ -23,25 +23,42 @@
 <body>
     <div class="container">
         <h1>Country Flags Quiz <i class="fa-solid fa-earth-americas"></i></h1>
-        <div class="game-area hide" id="game-area">
-            <div class="flag-container">
-                <img id="flag" alt="Country Flag" width="320" height="220" loading="lazy">
+        <div class="controls prestart-controls">
+            <button id="start-btn" class="start-btn">
+                Start <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        <section class="game-area hide" id="game-area">
+            <div class="game-grid">
+                <!-- LEFT: flag + question count -->
+                <div class="game-left">
+                    <div class="flag-container">
+                        <div class="flag-frame">
+                            <img id="flag" alt="Country Flag" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <div id="questions">Flag: <span id="count">1</span>/10</div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: options + result + score + controls -->
+                <div class="game-right">
+                    <div id="options" class="options-container"></div>
+                        <p id="result"></p>
+                    <div id="score-area">Score: <span id="score">0</span>/10</div>
+                    <div class="controls">
+                        <button id="next-btn" class="next-btn hide">Next</button>
+                    </div>
+                </div>
             </div>
-            <div id="questions">Flag: <span id="count">1</span>/10</div>
-            <div id="options" class="options-container"></div>
-            <p id="result"></p>
-            <div id="score-area">Score: <span id="score">0</span>/10</div>
-        </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn">Start <i class="fa-solid fa-arrow-right"></i></button>
-            <button id="next-btn" class="next-btn hide">Next</button>
-        </div>
+        </section>
     </div>
-    
+        
     <!-- Link to JS -->
     <script defer src="assets/js/script.js"></script>
 
     <!-- Font awesome script -->
- <script src="https://kit.fontawesome.com/a3fe93833d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a3fe93833d.js" crossorigin="anonymous"></script>
 </body>
 </html>
