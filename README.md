@@ -1,6 +1,6 @@
 # Country Flags Quiz
 
-![The Quiz start screen on a variety of screen sizes](assets/images/home.png)
+![The Quiz start screen on a variety of screen sizes](assets\images\amiresponsive.png)
 
 Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Country-Flags-Quiz/)
 
@@ -64,32 +64,45 @@ Match the flag image to one of the four listed country names.
 
 ### Colour Scheme
 
-I chose an image of a map of the world with no labels. This map's colour were simple light blue and white.
+I chose an image of an urban cafe, with national flags on the wall.
 
-* For the container of which the game sits inside I used rgba(2, 1, 0, 0.8).
-* For the Heading and Score I used #ffffff.
-* For correct answers I used #008000.
-* For incorrect answers I used #ff0000.
+* A glass-style card using --card (rgba(16, 24, 44, 0.72)), with subtle borders and shadows.
+* Primary Text: --text (#e8ecf1) for readability against the dark background.
+* Muted Text: --muted (#9aa6b2) for secondary information.
+* Accent / Brand Colours:
+  - Teal (--brand: #14b8a6)
+  - Indigo (--brand-2: #6366f1)
+  These are used for gradients, button accents, and highlights.
+* Feedback Colours:
+  - Correct answers → #008000 (green)
+  - Incorrect answers → #ff0000 (red)
 
 ### Typography
 
-Google Fonts was used to import the chosen fonts for use in the site.
+Google Fonts were used to give the game a playful yet modern look:
 
-* For the Page Heading I used the google font [Bangers] ('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap')
-* For the page content I used the google font [Noto Sans] ('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap')
+Headings: Outfit
+ - For a bold, clean, geometric style, supported by system fonts.
+
+Optional Fun Title Styling: Bangers
+ - Was imported for a comic-style feel (can be used in branding or headings if desired).
+
+Body / Content: Noto Sans
+ - Chosen for readability and clean presentation.
 
 ### Imagery
 
-For the Background Image I used a map of the world containing no labels.
+For the background I used an image of an urban cafe, with national flags on the wall.
 For the questions I used images of the country flags.
 
 ### Wireframes
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
+The final design has been updated since these wireframes were created. They represent the initial planning stage of the project.
 
-![Iphone](assets/images/iphone_wireframe.png)
-![Tablet](assets/images/ipad_wireframe.png)
-![Laptop](assets/images/laptop_wireframe.png)
+![Iphone](assets/images/wireframes/iphone_wireframe.png)
+![Tablet](assets/images/wireframes/ipad_wireframe.png)
+![Laptop](assets/images/wireframes/laptop_wireframe.png)
 
 
 ### Features
@@ -110,14 +123,14 @@ All pages are responsive and have:
 
 The home page contains the map image as the background and a container which hold the quiz inside. I has a start button to begin the quiz.
 
-![Home Page Image](assets/images/home.png)
+![Home Page Image](assets\images\amiresponsive.png)
 
 Once the quiz has begun, the flag image appears with four options to choose from. It also shows what question number the user is on, and their score.
 It contains a next button to move the user onto the next question, and tells the user if their answer is correct or incorrect.
 
-![Quiz question and Answers](assets/images/question_and_answer.png)
-![Correct Answer](assets/images/correct_answer.png)
-![Incorrect Answer](assets/images/incorrect_answer.png)
+![Quiz question and Answers](assets\images\question.png)
+![Correct Answer](assets\images\correct.png)
+![Incorrect Answer](assets\images\incorrect.png)
 
 #### 404 Error Page
 
@@ -186,9 +199,9 @@ Please refer to [TESTING.md](/TESTING.md) file for all testing carried out.
 
 ### Solved Bugs
 
-[Error](assets/images/Image_src_error.png) - Bad value for attribute 'src' - [Fixed](assets/images/src_fix.png)
+[Error](assets/images/testing/Image_src_error.png) - Bad value for attribute 'src' - [Fixed](assets/images/testing/src_fix.png)
 
-[Error](assets/images/javascript_test.png) - 1 Unused variable 'maxCount' - [Fixed](assets/images/js_fix.png)
+[Error](assets/images/testing/javascript_test.png) - 1 Unused variable 'maxCount' - [Fixed](assets/images/testing/js_fix.png)
 
 ## Credits
 
@@ -208,8 +221,8 @@ All content for the site were written by myself.
 
 Background image:
 
-Wikipedia -
-[Map](https://en.m.wikipedia.org/wiki/File:A_large_blank_world_map_with_oceans_marked_in_blue.PNG) 
+Unsplash - Farzad Mohsenvand
+[Unsplash](https://unsplash.com/photos/three-brown-wooden-tables-pKhfJme9mP0)
 
 Flags -
 All flag images were taken from Wikipedia [Wikipedia](https://www.wikipedia.org/)

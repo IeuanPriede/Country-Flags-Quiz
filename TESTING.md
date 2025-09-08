@@ -1,6 +1,6 @@
 # Country Flags Quiz - Testing
 
-![The Quiz start screen on a variety of screen sizes](assets/images/home.png)
+![The Quiz start screen on a variety of screen sizes](assets\images\amiresponsive.png)
 
 Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Country-Flags-Quiz/)
 
@@ -22,16 +22,16 @@ Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Cou
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* [index.html](assets/images/html-test.png) - Passed - 1 [Error](assets/images/Image_src_error.png)
-* [404.html](assets/images/404_test.png) - Passed
+* [index.html](assets/images/testing/html-test.png) - Passed - 1 [Error](assets/images/testing/Image_src_error.png)
+* [404.html](assets/images/testing/404_test.png) - Passed
 
-* [style.css](assets/images/css_test.png) - Passed
+* [style.css](assets/images/testing/css_test.png) - Passed
 
 ### JavaScript Validator
 
 [jshint](https://jshint.com/) I used to validate the JavaScript.
 
-* [script.js](assets/images/javascript_test.png) - Passed. 1 Unused variable = line 15 maxCount.
+* [script.js](assets/images/testing/javascript_test.png) - Passed. 1 Unused variable = line 15 maxCount.
 
 ### Lighthouse
 
@@ -39,11 +39,11 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Mobile Results
 
-![index.html](assets/images/iphone.png)
+![index.html](assets/images/testing/iphone.png)
 
 ### Desktop Results 
 
-![index.html](/assets/images/desktop.png)
+![index.html](/assets/images/testing/desktop.png)
 
 ## MANUAL TESTING
 
