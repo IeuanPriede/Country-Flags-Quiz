@@ -136,7 +136,7 @@ It contains a next button to move the user onto the next question, and tells the
 
 The 404 Error Page tells the user that something went wrong. It offer the user a way to return back to the home page with a 'Return' button.
 
-![404 Error Page](/assets/images/404.png)
+![404 Error Page](assets/images/404.png)
 
 ### Accessibility 
 
