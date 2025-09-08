@@ -1,6 +1,6 @@
 # Country Flags Quiz
 
-![The Quiz start screen on a variety of screen sizes](assets\images\amiresponsive.png)
+![The Quiz start screen on a variety of screen sizes](assets/images/amiresponsive.png)
 
 Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Country-Flags-Quiz/)
 
@@ -123,14 +123,14 @@ All pages are responsive and have:
 
 The home page contains the map image as the background and a container which hold the quiz inside. I has a start button to begin the quiz.
 
-![Home Page Image](assets\images\amiresponsive.png)
+![Home Page Image](assets/images/amiresponsive.png)
 
 Once the quiz has begun, the flag image appears with four options to choose from. It also shows what question number the user is on, and their score.
 It contains a next button to move the user onto the next question, and tells the user if their answer is correct or incorrect.
 
-![Quiz question and Answers](assets\images\question.png)
-![Correct Answer](assets\images\correct.png)
-![Incorrect Answer](assets\images\incorrect.png)
+![Quiz question and Answers](assets/images/question.png)
+![Correct Answer](assets/images/correct.png)
+![Incorrect Answer](assets/images/incorrect.png)
 
 #### 404 Error Page
 

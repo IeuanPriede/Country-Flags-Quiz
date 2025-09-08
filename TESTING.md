@@ -1,6 +1,6 @@
 # Country Flags Quiz - Testing
 
-![The Quiz start screen on a variety of screen sizes](assets\images\amiresponsive.png)
+![The Quiz start screen on a variety of screen sizes](assets/images/amiresponsive.png)
 
 Visit the deployed site: [Country Flags Quiz] (https://ieuanpriede.github.io/Country-Flags-Quiz/)
 
